@@ -1,0 +1,18 @@
+language: node.js
+node_js:
+- '10'
+
+before install:
+- npm install -g @angular/cli
+install: npm install
+
+branches:
+only:
+- main
+
+
+deploy:
+  provider: heroku
+  app: my-simple-retro-board
+  api_key:
+  secure: "5e3c9a6d-4d78-49d0-a6a7-7300fdd0e60b"
