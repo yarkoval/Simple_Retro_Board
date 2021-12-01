@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="shadow justify-content-between px-5 mb-4">
+    <div>
+        <span class="mat-h2">My simple Retro Board</span>
+    </div>
+    <div>
+
+        <app-dialog (emitText)="addColumn($event)" question="Add new column">
+            <button mat-raised-button color="warn">
+        New Column
+      </button>
+        </app-dialog>
+
+    </div>
+</mat-toolbar>
